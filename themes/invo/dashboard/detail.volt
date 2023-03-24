@@ -16,12 +16,12 @@
           <h2 class="mb-1 font-weight-bold">Pricing Details</h2>
           <ul class="pricing list-unstyled">
             <li class="clearfix">
-              <h2 class="price msrp">${{ vehicle.retailPrice }}</h2>
+              <h2 class="price msrp">${{ number_format(vehicle.retailPrice,2) }}</h2>
               <h3 id="msrp-header" class="pricing-label">Retail Price</h3>
             </li>
             <li class="clearfix subLine"></li>
             <li class="clearfix">
-              <h3 class="price sale-price">${{ vehicle.salesPrice }}</h3>
+              <h3 class="price sale-price">${{ number_format(vehicle.salesPrice,2) }}</h3>
               <h2 class="pricing-label sale-price">Long Price</h2>
             </li>
           </ul>

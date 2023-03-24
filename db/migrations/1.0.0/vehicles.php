@@ -73,7 +73,7 @@ class VehiclesMigration_100 extends Migration
                     'salesPrice',
                     [
                         'type' => Column::TYPE_DECIMAL,
-                        'notNull' => true,
+                        'notNull' => false,
                         'size' => 10,
                         'scale' => 2,
                         'after' => 'retailPrice'
@@ -193,7 +193,7 @@ class VehiclesMigration_100 extends Migration
             ],
             'options' => [
                 'TABLE_TYPE' => 'BASE TABLE',
-                'AUTO_INCREMENT' => '3',
+                'AUTO_INCREMENT' => '23',
                 'ENGINE' => 'InnoDB',
                 'TABLE_COLLATION' => 'utf8_unicode_ci',
             ],
@@ -207,6 +207,26 @@ class VehiclesMigration_100 extends Migration
      */
     public function up(): void
     {
+        $this->batchInsert('vehicles', [
+            'id',
+            'name',
+            'type',
+            'condition',
+            'retailPrice',
+            'salesPrice',
+            'stock',
+            'mileage',
+            'mpgCity',
+            'mpgHwy',
+            'engine',
+            'transmissions',
+            'drivetrain',
+            'image',
+            'exteriorColor',
+            'interiorColor',
+            'vin',
+            'dealerLot',
+        ]);
     }
 
     /**
@@ -216,5 +236,6 @@ class VehiclesMigration_100 extends Migration
      */
     public function down(): void
     {
+        $this->batchDelete('vehicles');
     }
 }

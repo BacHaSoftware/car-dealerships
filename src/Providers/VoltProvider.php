@@ -31,6 +31,8 @@ class VoltProvider implements ServiceProviderInterface
 
             $compiler = $volt->getCompiler();
             $compiler->addFunction('is_a', 'is_a');
+            $compiler->addFunction('ceil', 'ceil');
+            $compiler->addFunction('number_format', 'number_format');
 
             return $volt;
         });

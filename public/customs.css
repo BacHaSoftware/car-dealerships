@@ -50,3 +50,27 @@
     align-items: flex-start;
     justify-content: space-between;
 }
+
+.product-price-discount {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #28a745;
+    padding: 6px 12px;
+    position: relative;
+    top: -27px;
+    right: -30%;
+    z-index: 3;
+}
+
+.product-desc {
+    display: grid;
+    padding: 10px 0px;
+    position: relative;
+}
+
+
+.product-box {
+    padding: 10px;
+    border: 1px solid #e7eaec;
+}

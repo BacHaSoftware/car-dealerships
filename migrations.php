@@ -22,6 +22,8 @@ return new Config(
             'logInDb'              => true,
             'migrationsDir'        => 'db/migrations',
             'exportDataFromTables' => [
+                'users',
+                'vehicles'
             ],
         ],
     ]

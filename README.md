@@ -31,6 +31,7 @@ switch to the relevant branch.
 1. Copy project to local environment - `git clone git@github.com:phalcon/invo.git`
 2. Copy file `cp .env.example .env`
 3. Edit .env file with your DB connection information
+4. Run DB migrations vendor/bin/phalcon-migrations run --config=migrations.php
 
 If you do not have PHP installed on your machine or do not wish to install it, you 
 can run the application in a docker container. You will need [docker][9] and [docker-compose][10].
