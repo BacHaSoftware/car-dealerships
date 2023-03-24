@@ -1,0 +1,52 @@
+.vehicle-snapshot li .snapshot-data {
+    display: inline-block;
+    padding-right: 24px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
+.vehicle-snapshot li {
+    margin: 0 0 48px;
+    position: relative;
+    min-height: 48px;
+    padding: 0 16px 0 64px;
+    text-align: left;
+    line-height: 1.25;
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+.snapshot-icon {
+    position: absolute;
+    top: -4px;
+    left: 0;
+    text-align: center;
+}
+.fa, .fas {
+    font-weight: 900;
+}
+
+.vehicle-snapshot li .snapshot-data span {
+    display: block;
+    font-size: 14px;
+}
+
+.detail-inventory-pricing .pricing .subLine {
+    padding-bottom: 5px;
+    border-bottom: 2px dotted;
+}
+
+
+
+.detail-inventory-pricing .pricing li {
+    flex-direction: row-reverse;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+}
